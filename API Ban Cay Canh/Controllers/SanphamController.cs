@@ -68,7 +68,7 @@ namespace API_Ban_Cay_Canh.Controllers
         public IActionResult Search(string key)
         {
 
-
+            // hahhshsah
             var kq = from cay in db.Cays
                      join loaicay in db.LoaiCays on cay.MaLoaiCay equals loaicay.MaLoaiCay
                      join giacay in db.GiaCays on cay.MaCay equals giacay.MaCay

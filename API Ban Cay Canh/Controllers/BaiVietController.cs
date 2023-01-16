@@ -25,7 +25,7 @@ namespace API_Ban_Cay_Canh.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "value"; 
         }
 
         // POST api/<BaiVietController>
