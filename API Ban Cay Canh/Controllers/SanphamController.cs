@@ -15,7 +15,7 @@ namespace API_Ban_Cay_Canh.Controllers
         public BanCayCanhContext db = new BanCayCanhContext();
         // GET: SanphamController
         [HttpGet]
-        [Route("api/Cay/Get")]
+        [Route("api/Cay/Get")] ///
         public IActionResult Get()
         {
             var result = from cay in db.Cays join loaicay in db.LoaiCays on cay.MaLoaiCay equals loaicay.MaLoaiCay join giacay in db.GiaCays on cay.MaCay equals giacay.MaCay
